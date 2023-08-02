@@ -1,11 +1,15 @@
 //require module 
 const configUrl = require("./config/configUrl")
 const configServer = require("./config/server.config")
+// require("dotenv").config()
+var cors = require('cors');
+
 //connection require
 const express = require("express")
 const app = express()
 const bodyParser = require("body-parser")
 app.use(bodyParser.json())
+
 app.use(bodyParser.urlencoded({extended: true}))
 const mongoose = require("mongoose")
 mongoose.connect(configUrl.DB_URL)
