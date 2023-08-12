@@ -1,8 +1,6 @@
 //require module 
 const configUrl = require("./config/configUrl")
 const configServer = require("./config/server.config")
-// require("dotenv").config()
-var cors = require('cors');
 
 //connection require
 const express = require("express")
